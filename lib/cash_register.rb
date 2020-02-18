@@ -22,8 +22,7 @@ class CashRegister
     end
     
     @total += price*x
-    @prices.uniq!
-    @last_transaction = @prices.pop
+    @last_transaction = (@prices.pop)*x
     @total
   end
   
